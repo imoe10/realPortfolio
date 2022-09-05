@@ -18,7 +18,7 @@ html, body {
 @media screen and (min-width: 300px) and (max-width: 600px) {
 section {
 	height: 100vh;
-	overflow-x:hidden;
+	overflow-y:hidden;
 }
 
 section .title {
