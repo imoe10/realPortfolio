@@ -22,9 +22,9 @@ section {
 
 section .title {
 	line-height: 1.2;
-	font-size: 40px;
+	font-size: 35px;
 	font-family: 'Poppins', sans-serif;
-	padding:200px 50px 20px 50px;
+	padding:180px 50px 0 50px;
 }
 
 section .content p {
@@ -33,7 +33,7 @@ section .content p {
 	line-height: 1.2;
 	font-size: 30px;
 	font-family: 'Poppins', sans-serif;
-	top: 250px;
+	top: 180px;
 	opacity:0;
 }
 
@@ -121,13 +121,12 @@ section .content a{
 
 .footer {
 	position: absolute;
-	bottom: 10px;
-	height: 70px;
+	bottom: 0;
+	height: 20px;
 	width: 100%;
 	display: flex;	
 	justify-content:  center;
 	align-items: center;
-	background: #;
 }
 
 .footer_item {
