@@ -66,8 +66,8 @@ section .content a{
 
 .header {
 	position: absolute;
-	height:20px;
-	top:20px;
+	height:30px;
+	top:24px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
