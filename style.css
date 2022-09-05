@@ -30,7 +30,7 @@ section .title {
 
 section .content p {
 	position: absolute;
-	padding: 0 9% 0 10%;
+	padding: 0 8% 0 10%;
 	line-height: 1.2;
 	font-size: 30px;
 	font-family: 'Poppins', sans-serif;
