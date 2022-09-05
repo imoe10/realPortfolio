@@ -67,7 +67,6 @@ section .content a{
 .header {
 	position: absolute;
 	top:24px;
-	height: 60px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -75,8 +74,8 @@ section .content a{
 }
 
 .header img {
-	height: 250px;
-	width:250px;
+	height: 200px;
+	width:200px;
 }
 
 .header img:hover {
