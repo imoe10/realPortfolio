@@ -171,6 +171,17 @@ section .content a{
 	font-size: 18px;
 	color: #FF8C32;
 }
+	
+section .projects p {
+	position: absolute;
+	line-height: 1.2;
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	top: 300px;
+	padding: 0 30% 0 30%;
+	opacity:0;
+}
+
 
 #svvg {
   position: absolute;
