@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function showContent() {
+			document.getElementById("content").style.opacity = "1";
+			document.getElementById("mtitle").style.opacity = "0";
+			document.getElementById("projects_button").style.opacity = "0";
+			document.getElementById("projects_button").style.transition = "all .2s ease";
+			document.getElementById("content").style.transition = "all .8s ease";
+			document.getElementById("mtitle").style.transition = "all .4s ease";
+		}
+	</script>
+</head>
+<body>
+	<section>
+		<div class="header">
+			<img onclick="javascript:location.href='./index.html'" src="./img/m.jpg">
+		</div>
+		<div class="title" >
+			<h1 id="mtitle">Hello, I'm Mohamed<br>Welcome to my portfolio</h1>
+		</div>
+		<div class="content" >
+			<p id="content">Propably not the best Software Engineer out there but I love writing code and I enjoy new challenges.
+			Currently working as a VBA progammer and I'm available for freelance jobs. <a href="mailto:morashwan8.com" target="_blank">Let's work together or just say hi 👋</a></p>
+		</div>
+		
+		<div class="projects_button" id="projects_button">
+			<a href="">Explore projects</a>
+		</div>
+	
+		<!--
+		<div class="links">
+		<div class="links_item">
+		<div onmouseover="showContent()" class="projects_button">
+			<a href="">Explore projects</a>
+		</div>
+		</div>
+		<div class="links_item">
+		<div class="normal_button">
+			<a href="">Email</a>
+		</div>
+		</div>
+		<div class="links_item">
+		<div class="normal_button">
+			<a href="">Linkedin</a>
+		</div>
+		</div>
+		<div class="links_item">
+		<div class="normal_button">
+			<a href="">Instagram</a>
+		</div>
+		</div>
+		</div>
+		-->
+		<svg id="svvg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  		<path fill="#764AF1" d="M58.1,-4.9C58.1,19.1,29,38.2,4.7,38.2C-19.7,38.2,-39.4,19.1,-39.4,-4.9C-39.4,-28.8,-19.7,-57.7,4.7,-57.7C29,-57.7,58.1,-28.8,58.1,-4.9Z" transform="translate(100 100)" />
+		</svg>
+
+	
+		<div class="footer">
+			<div class="footer_item">
+				<a href="javascript:showContent();">About</a>
+			</div>
+			<div class="footer_item">
+				<a href="https://linkedin.com/in/mohamed-rashwan-aa8ba01aa" target="_blank">Linkedin</a>
+			</div>
+			<div class="footer_item">
+				<a href="mailto:morashwan8@gmail.com" target="_blank">Email</a>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>
