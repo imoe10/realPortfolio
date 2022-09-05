@@ -43,6 +43,16 @@ section .content a{
 	font-size: 20px;
 	color: #FF8C32;
 }
+	
+section .projects p {
+	position: absolute;
+	line-height: 1.2;
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	top: 250px;
+	padding: 0 10% 0 10%;
+	opacity:0;
+}
 
 #svvg {
   position: absolute;
