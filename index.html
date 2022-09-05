@@ -6,13 +6,25 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript">
-		function showContent() {
+			function showContent() {
 			document.getElementById("content").style.opacity = "1";
 			document.getElementById("mtitle").style.opacity = "0";
 			document.getElementById("projects_button").style.opacity = "0";
+			document.getElementById("projects").style.opacity = "0";
 			document.getElementById("projects_button").style.transition = "all .2s ease";
 			document.getElementById("content").style.transition = "all .8s ease";
 			document.getElementById("mtitle").style.transition = "all .4s ease";
+			document.getElementById("projects").style.transition = "all .4s ease";
+		}
+			function showProjects() {
+			document.getElementById("projects").style.opacity = "1";
+			document.getElementById("mtitle").style.opacity = "0";
+			document.getElementById("projects_button").style.opacity = "0";
+			document.getElementById("content").style.opacity = "0";
+			document.getElementById("projects_button").style.transition = "all .2s ease";
+			document.getElementById("projects").style.transition = "all .8s ease";
+			document.getElementById("mtitle").style.transition = "all .4s ease";
+			document.getElementById("content").style.transition = "all .4s ease";
 		}
 	</script>
 </head>
