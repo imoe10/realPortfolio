@@ -21,7 +21,7 @@ section {
 }
 
 section .title {
-	line-height: 1.2;
+	line-height: 1;
 	font-size: 35px;
 	font-family: 'Poppins', sans-serif;
 	padding:150px 50px 0 50px;
