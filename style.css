@@ -243,7 +243,7 @@ section .projects p {
 
 
 .timeline-carousel {
-	height: 100vh;
+	height: auto;
   padding: 86px 6.9444% 90px 6.9444%;
   position: relative;
   overflow: hidden;
@@ -254,7 +254,7 @@ section .projects p {
 
 .workshop-desc {
   position: relative;
-  font-size: 50px ;
+  font-size: 40px ;
   bottom: 150px;
   left: 15%;
   color: #FFF;
