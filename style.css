@@ -194,7 +194,7 @@ section .projects p {
 }
 
 .footer_item a {
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: 3px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -213,7 +213,7 @@ section .projects p {
 #projects {
 	background: #1A4D2E;
 	color: #fff;
-	padding: 6px 10px;
+	padding: 4px 8px;
 	filter: drop-shadow(2px 4px 0 #000  );
 	border: 2px solid #1A4D2E ;
 }
@@ -221,7 +221,7 @@ section .projects p {
 #email {
 	background: #FAF3E3;
 	color: #000;
-		padding: 6px 10px;
+		padding: 4px 8px;
 		  filter: drop-shadow(2px 4px 0 #000  );
 		  border: 2px solid #FAF3E3	 ;
 }
@@ -229,7 +229,7 @@ section .projects p {
 #about {
 	background: #FF9F29;
 	color: #000;
-		padding: 6px 10px;
+		padding: 4px 8px;
 		  filter: drop-shadow(2px 4px 0 #000  );
 		  border: 2px solid #FF9F29;
 }
@@ -237,7 +237,7 @@ section .projects p {
 #linkedin {
 	background: #000000;
 	color: #FFF;
-		padding: 6px 10px;
+		padding: 4px 8px;
 		  filter: drop-shadow(2px 4px 0 #000  );
 		  border: 2px solid #000000 ;
 }
