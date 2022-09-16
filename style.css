@@ -22,7 +22,7 @@ section {
 
 section .title {
 	line-height: 1.3;
-	font-size: 45px;
+	font-size: 50px;
 	font-family: 'Poppins', sans-serif;
 	padding:250px 0 0 20px;
 	text-align: left;
@@ -101,7 +101,7 @@ input {
 
 .wrapper ul {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -111,7 +111,7 @@ input {
 }
 
 .wrapper ul li {
-  margin: 0 50px 70px 50px;
+  margin: 0 50px 40px 50px;
   z-index: 99;
     padding: 0;
 }
