@@ -11,7 +11,7 @@ html {
 }
 
 html, body {
-    overflow: hidden;
+    overflow: auto;
   margin: auto 0;
 }
 
@@ -64,12 +64,11 @@ section {
   z-index: -99;
 }
 
+
 .about-me p {
-  position: absolute;
-  bottom: 10px;
-  padding:0 50px 0 7%;
+  padding:0 10px 0 7%;
   line-height: 1.2;
-  font-size:40px;
+  font-size:36px;
    font-family: 'Melodrama', serif;
    z-index: -99;
 }
