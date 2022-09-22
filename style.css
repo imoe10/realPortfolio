@@ -17,16 +17,17 @@ html, body {
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
 section {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .name h1 {
   font-size: 70px;
   font-family: 'Melodrama', serif;
-  padding:350px 0 0 0;
+  padding:300px 0 0 0;
   text-align: center;
   font-weight: 300;
   z-index: -99;
+  line-height: 0.8;
 }
 .name h1:after   {
   content: "Software Engineer";
