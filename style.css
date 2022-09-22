@@ -627,6 +627,10 @@ section {
   text-transform: uppercase;
 }
 
+.hero-section {
+  overflow: hidden;
+}
+	
 .about-section {
   text-align: center;
 }
