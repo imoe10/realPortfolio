@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -11,47 +11,100 @@ html {
 }
 
 html, body {
-  overflow: hidden;
+    overflow: hidden;
   margin: auto 0;
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
 section {
-	height: 100vh;
+  min-height: 100vh;
 }
 
-section .title {
-	line-height: 1.5;
-	font-size: 40px;
-	font-family: 'Poppins', sans-serif;
-	padding:200px 0 0 60px;
-	text-align: left;
+.name h1 {
+  font-size: 70px;
+  font-family: 'Melodrama', serif;
+  padding:350px 0 0 0;
+  text-align: center;
+  font-weight: 300;
+  z-index: -99;
 }
+.name h1:after   {
+  content: "Software Engineer";
+  padding: 20px 0;
+  display: block;
+  font-size: 13px;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-section {
+  text-align: center;
+}
+
+.myImage {
+  text-align: center;
+  margin: 40px 0 0 0;
+  position: relative;
+  z-index: -99;
+}
+
+.myImage img {
+  width: auto;
+  height: 500px;
+  border: 1px solid #000;
+  filter: grayscale(100%);
+  z-index: -99;
+}
+
+.about-me {
+  text-align: left;
+  z-index: -99;
+}
+
+.about-me p {
+  position: absolute;
+  bottom: 10px;
+  padding:0 50px 0 7%;
+  line-height: 1.2;
+  font-size:40px;
+   font-family: 'Melodrama', serif;
+   z-index: -99;
+}
+
+.about-me span {
+  font-size:42px;
+   font-family: 'Melodrama', serif;
+    color: #000;
+}
+
+
 
 section .content p {
-	position: absolute;
-	padding: 0 8% 0 10%;
-	line-height: 1.2;
-	font-size: 30px;
-	font-family: 'Poppins', sans-serif;
-	top: 250px;
-	opacity:0;
+  position: absolute;
+  line-height: 1.2;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  top: 300px;
+  padding: 0 30% 0 30%;
+  opacity:0;
 }
 
 section .content a{
-	text-decoration: none;
-	font-size: 18px;
-	color: #FF8C32;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FF8C32;
 }
 
 section .projects p {
-	position: absolute;
-	line-height: 1.2;
-	font-size: 50px;
-	font-family: 'Poppins', sans-serif;
-	top: 300px;
-	padding: 0 30% 0 30%;
-	opacity:0;
+  position: absolute;
+  line-height: 1.2;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  top: 300px;
+  padding: 0 30% 0 30%;
+  opacity:0;
 }
 
 .wrapper {
@@ -60,10 +113,12 @@ section .projects p {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #00492C;
+  background: #252525;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+
 }
+
 
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
@@ -79,15 +134,16 @@ section .projects p {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: #00492C;
+  background: #252525;
   color: #FFF;
   font-size: 20px;
   cursor: pointer;
+
 }
 
 #active:checked ~ .menu-btn {
   background: #FFF;
-  color: #00492C;
+  color: #252525;
 }
 
 #active:checked ~ .menu-btn i:before {
@@ -100,61 +156,62 @@ input {
 
 .wrapper ul {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
   z-index: 99;
   padding: 0;
+
 }
 
 .wrapper ul li {
-  margin: 0 50px 40px 50px;
   z-index: 99;
-    padding: 0;
+  padding: 0;
+  margin: 30px 0;
 }
 
 .wrapper ul li a {
   position: relative;
-  color: #CB6CE6;
+  color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
+  font-size: 70px;
+  font-family: 'Melodrama', serif;
   z-index:99;
+  padding: 10px;
+
 }
 
 .wrapper a:hover, li:hover {
-  color: #F57328;
+  color: #484848;
   cursor: pointer;
 }
 
-
-
 #My_photo {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 #My_photo img {
-	position: absolute;
-	bottom: 0;
-	border-radius: 50px;
-	height: 80px;
-	width: 180px;
-    z-index: -10;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+  height: 80px;
+  width: 250px;
+  z-index: -10;
 }
 
-#My_photo2 {
-	position: relative;
-	display: inline-block;
-}
 
-#My_photo2 img {
-	border-radius: 50px;
-	height: 80px;
-	width: 200px;
+.wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  border-radius: 50px;
+  height: 200px;
+  width: auto;
 }
 
 .top {
@@ -169,10 +226,10 @@ input {
     opacity: 0;
   }
   25% {
-  	opacity: 1;
+    opacity: 1;
   }
   75% {
-  	opacity: 1;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -185,7 +242,7 @@ input {
   right: 20%;
   width: 700px;
   height: 700px;
-  filter: blur(100px);
+  filter: blur(130px);
   animation: moving infinite;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
@@ -193,138 +250,138 @@ input {
 }
 
 @keyframes moving {
-	0% {transform: translateX(0px);}
-	30% {transform: translateX(-800px);}
-	60% {transform: translateY(200px);}
-	90% {transform: translateX(140px);}
-	100% {transform: translateX(0);}
+  0% {transform: translateX(0px);}
+  30% {transform: translateX(-800px);}
+  60% {transform: translateY(200px);}
+  90% {transform: translateX(140px);}
+  100% {transform: translateX(0);}
 }
 
-
-
 .header {
-	position: absolute;
-  text-align: center;
-	top:24px;
-	height: 100px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: absolute;
+
+  top:24px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header img {
-	height: 250px;
-	width:250px;
+  height: 250px;
+  width:250px;
 }
 
 .header img:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .links {
-	position: absolute;
-	bottom: 6px;
-	height: 70px;
-	width: 100%;
-	display: flex;	
-	justify-content:flex-end;
-	align-items: center;
-	background: #FFF;
+  position: absolute;
+  bottom: 6px;
+  height: 70px;
+  width: 100%;
+  display: flex;  
+  justify-content:flex-end;
+  align-items: center;
+  background: #FFF;
 }
 
 .links_item {
-	margin: 70px;
+  margin: 70px;
 }
 
 .projects_button a {
-	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	padding: 18px 26px;
-	background: #000000;
-	color: #FFFFFF;
-	border-radius: 50px;
-	margin: 0 200px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 18px 26px;
+  background: #000000;
+  color: #FFFFFF;
+  border-radius: 50px;
+  margin: 0 200px;
 }
 
 .normal_button a {
-	font-size: 16px;
-	letter-spacing: 3px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	text-decoration: none;
-	color: #000;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
 }
 
 
 .footer {
-	position: absolute;
-	bottom: 35px;
-	height: 10px;
-	width: 100%;
-	display: flex;	
-	justify-content:  center;
-	align-items: center;
+  position: absolute;
+  bottom: 25px;
+  height: 70px;
+  width: 100%;
+  display: flex;  
+  justify-content:  center;
+  align-items: center;
+  background: #;
 }
 
 .footer_item {
-	margin: 15px;
+  margin: 20px;
 
 }
 
 .footer_item a {
-	font-size: 14px;
-	letter-spacing: 3px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	text-decoration: none;
-	color: #ffffff;
-	display: inline-block;
-		
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: 'Melodrama', serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+    
 }
 
 .footer_item a:hover {
-	cursor: pointer;
-	transform: scale(1.2);
-	transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  text-decoration: line-through;
+  transition: all 0.4s ease-in-out;
 }
 
 #projects {
-	background: #1A4D2E;
-	color: #fff;
-	padding: 10px 14px;
-	filter: drop-shadow(2px 4px 0 #000  );
-	border: 2px solid #1A4D2E ;
+  background: #1A4D2E;
+  color: #fff;
+  padding: 10px 14px;
+  filter: drop-shadow(2px 4px 0 #000  );
+  border: 2px solid #1A4D2E ;
 }
 
 #email {
-	background: #FAF3E3;
-	color: #000;
-		padding: 10px 14px;
-		  filter: drop-shadow(2px 4px 0 #000  );
-		  border: 2px solid #FAF3E3	 ;
+  color: #F2F2F2;
 }
 
 #about {
-	background: #FF9F29;
-	color: #000;
-		padding: 10px 14px;
-		  filter: drop-shadow(2px 4px 0 #000  );
-		  border: 2px solid #FF9F29;
+  background: #FF9F29;
+  color: #000;
+    padding: 10px 14px;
+      filter: drop-shadow(2px 4px 0 #000  );
+      border: 2px solid #FF9F29;
 }
 
 #linkedin {
-	background: #000000;
-	color: #FFF;
-		padding: 10px 14px;
-		  filter: drop-shadow(2px 4px 0 #000  );
-		  border: 2px solid #000000 ;
+  color: #F2F2F2;
+}
+
+#year {
+  color: #F2F2F2;
+}
+
+#year:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 
 .timeline-carousel {
-	height: 100vh;
+  height: 100vh;
   padding: 86px 6.9444% 90px 6.9444%;
   position: relative;
   overflow: hidden;
@@ -340,6 +397,7 @@ input {
   left: 15%;
   color: #FFF;
   font-weight: 300;
+  font-family: 'Melodrama', serif;
 }
 .timeline-carousel:after, .timeline-carousel:before {
   content: "";
@@ -537,6 +595,7 @@ input {
   background: #b38c52;
   border-color: #b38c52;
 }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -544,14 +603,63 @@ section {
 	min-height: 100vh;
 }
 
-section .title {
-	line-height: 1.1;
-	font-size: 70px;
-	font-family: 'Poppins', sans-serif;
+.name h1 {
+	font-size: 130px;
+	font-family: 'Melodrama', serif;
 	padding:250px 0 0 0;
 	text-align: center;
-	letter-spacing: 3px;
+  font-weight: 300;
+  z-index: -99;
 }
+.name h1:after   {
+  content: "Software Engineer";
+  padding: 40px 0;
+  display: block;
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-section {
+  text-align: center;
+}
+
+.myImage {
+  text-align: center;
+  margin: 80px 0 0 0;
+  position: relative;
+  z-index: -99;
+}
+
+.myImage img {
+  width: auto;
+  height: 550px;
+  border: 1px solid #000;
+  filter: grayscale(100%);
+  z-index: -99;
+}
+
+.about-me {
+
+  text-align: center;
+  padding:0 10% 0 10%;
+}
+
+.about-me p {
+  line-height: 1.2;
+  font-size:42px;
+   font-family: 'Melodrama', serif;
+}
+
+.about-me span {
+  font-size:42px;
+   font-family: 'Melodrama', serif;
+    color: #000;
+}
+
+
 
 section .content p {
 	position: absolute;
@@ -585,10 +693,12 @@ section .projects p {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #00492C;
+  background: #252525;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+
 }
+
 
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
@@ -604,15 +714,16 @@ section .projects p {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: #00492C;
+  background: #252525;
   color: #FFF;
   font-size: 20px;
   cursor: pointer;
+
 }
 
 #active:checked ~ .menu-btn {
   background: #FFF;
-  color: #00492C;
+  color: #252525;
 }
 
 #active:checked ~ .menu-btn i:before {
@@ -632,28 +743,29 @@ input {
   text-align: center;
   z-index: 99;
   padding: 0;
+
 }
 
 .wrapper ul li {
-  margin: 0 50px 150px 50px;
   z-index: 99;
-  display: inline-block;
-    padding: 0;
+  padding: 0;
+  margin: 30px 0;
 }
 
 .wrapper ul li a {
   position: relative;
-  color: #CB6CE6;
+  color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 70px;
-  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  font-family: 'Melodrama', serif;
   z-index:99;
-    padding: 10px;
+  padding: 10px;
+
 }
 
 .wrapper a:hover, li:hover {
-  color: #F57328;
+  color: #484848;
   cursor: pointer;
 }
 
@@ -710,7 +822,7 @@ input {
   right: 20%;
   width: 700px;
   height: 700px;
-  filter: blur(100px);
+  filter: blur(130px);
   animation: moving infinite;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
@@ -798,9 +910,9 @@ input {
 }
 
 .footer_item a {
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 3px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Melodrama', serif;
 	font-weight: 400;
 	text-decoration: none;
 	color: #ffffff;
@@ -810,7 +922,7 @@ input {
 
 .footer_item a:hover {
 	cursor: pointer;
-	transform: scale(1.2);
+	text-decoration: line-through;
 	transition: all 0.4s ease-in-out;
 }
 
@@ -823,11 +935,7 @@ input {
 }
 
 #email {
-	background: #000000;
-	color: #FFF;
-		padding: 10px 14px;
-		  filter: drop-shadow(2px 4px 0 #000  );
-		  border: 2px solid #000000	 ;
+	color: #F2F2F2;
 }
 
 #about {
@@ -839,11 +947,16 @@ input {
 }
 
 #linkedin {
-	background: #000000;
-	color: #FFF;
-		padding: 10px 14px;
-		  filter: drop-shadow(2px 4px 0 #000  );
-		  border: 2px solid #000000 ;
+	color: #F2F2F2;
+}
+
+#year {
+  color: #F2F2F2;
+}
+
+#year:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
 
