@@ -33,6 +33,7 @@ section {
   z-index: -99;
   line-height: 0.8;
 }
+	
 .name h1:after   {
   content: "Software Engineer";
   padding: 20px 0;
@@ -129,7 +130,7 @@ section .projects p {
 }
 
 .menu-btn {
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 20px;
   z-index: 2;
