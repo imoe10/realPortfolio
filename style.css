@@ -16,11 +16,12 @@ html, body {
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero-section {
-  overflow: hidden;
+  height: 90vh;
+  overflow:hidden;
 }
 
 .name h1 {
