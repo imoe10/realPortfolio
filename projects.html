@@ -5,76 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
-	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400,500,600&display=swap" rel="stylesheet">
 </head>
 <body >
 	
-		      <!--Timeline carousel-->
-<section class="timeline-carousel">
-    <h1></h1>
-    <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
-
-           <!--Timeline item-->
-        <div class="timeline-carousel__item">
-            <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('') center center; background-size:cover;"></div>
+    <section class="projects">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
+            <div class="footer">
+            <div class="footer_item">
+                <a id="email" href="mailto:morashwan8@gmail.com" target="_blank">morashwan8@gmail.com</a>
             </div>
-            <div class="timeline-carousel__item-inner">
-                <span class="workshop-desc">My projects</span>
-                <span class="month"></span>
-                <p></p>
-              <a href="#" class="read-more"></a>
+            <div class="footer_item">
+                <a id="linkedin" href="https://linkedin.com/in/mohamed-rashwan-aa8ba01aa" target="_blank">Linkedin</a>
             </div>
-        </div>
-       <!--/Timeline item-->    
-
-        <!--Timeline item-->
-        <div class="timeline-carousel__item">
-            <div class="timeline-carousel__image">
-                <div class="media-wrapper media-wrapper--overlay" style="background: url('./img/2.jpg') center center; background-size:cover;"></div>
-            </div>
-            <div class="timeline-carousel__item-inner">
-                <span class="year">Coming soon</span>
-                <span class="month"></span>
-                <p></p>
-              <a href="#" class="read-more"></a>
+            <div class="footer_item">
+                <a id="year" href="#">© 2022</a>
             </div>
         </div>
-       <!--/Timeline item-->
-       
-        
-    </div>
-</section>
-		
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
-<script type="text/javascript">
-	$.js = function (el) {
-    return $('[data-js=' + el + ']')
-};
+        </div>
+        <div class="projects-caption">
+            <h2>This page is down for manitainance</h2>
+        </div>
+    </section>
 
-function carousel() {
-  $.js('timeline-carousel').slick({
-    infinite: false,
-    arrows: false,
-    dots: true,
-    autoplay: false,
-    speed: 1100,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }]
-  });
-}
-
-carousel();
-</script>
 </body>
 </html>
