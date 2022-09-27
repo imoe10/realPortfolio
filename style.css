@@ -385,19 +385,18 @@ input {
 }
 
 .projects {
+  height: 70vh;
   overflow: hidden;
-  height: 90vh;
 }
 
 .projects-caption h2{
-  position: relative;
   line-height:1;
-  top: 300px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 35px;
   font-weight: 300;
   z-index: -99;
+  padding: 300px 7% 0 7%; 
 }
 
 }
