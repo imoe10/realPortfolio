@@ -386,7 +386,7 @@ input {
 
 .projects {
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
 }
 
 .projects-caption h2{
@@ -770,7 +770,7 @@ filter: drop-shadow(2px 4px 0 #000  );
 
 .projects {
   overflow:hidden;
-  height: 90vh;
+  height: 100vh;
 }
 
 .projects-caption h2{
