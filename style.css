@@ -384,7 +384,20 @@ input {
   cursor: default;
 }
 
+.projects {
+  overflow: hidden;
+  height: 100vh;
+}
 
+.projects-caption h2{
+  position: relative;
+  top: 350px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  z-index: -99;
+}
 
 }
 
